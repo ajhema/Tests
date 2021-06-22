@@ -15,7 +15,7 @@ public class CreateMeeting {
 	cap.setCapability("deviceName", "Emulator");
 	cap.setCapability("platformVersion", "11.0");
 	cap.setCapability("platformName", "Android");
-	cap.setCapability("appActivity","");
+	cap.setCapability("appPackage","com.google.android.calendar");
 	AndroidDriver<AndroidElement> driver=new AndroidDriver<>(new URL("http://127.0.0.1.4723/wd/hub"), cap);
 	driver.manage().timeouts.implicitlyWait(15, TimeUnit.SECONDS);
     }
